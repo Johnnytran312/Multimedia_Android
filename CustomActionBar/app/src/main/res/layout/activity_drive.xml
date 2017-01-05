@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.johnnytran.customactionbar.DriveActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorAccent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_weight="0.13">
+
+        <TextView
+            android:text="Thông tin bài hát"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#029183"
+        android:layout_weight="0.49"
+        style="@style/AppTheme.PopupOverlay">
+
+        <Button
+            android:drawableTop="@drawable/ic_skip_previous_black_24dp"
+            android:text="PRE"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonPre"
+            android:layout_weight="1"
+            android:textColor="#000"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+
+        <Button
+            android:drawableTop="@drawable/ic_play_circle_outline_black_24dp"
+            android:text="PLAY"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonPlay"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#000"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+
+        <Button
+            android:drawableTop="@drawable/ic_skip_next_black_24dp"
+            android:text="next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonNext"
+            android:layout_weight="1"
+            android:textColor="#000"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="84dp">
+
+        <Button
+            android:drawableTop="@drawable/ic_shuffle_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonSuf"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+
+        <Button
+            android:drawableTop="@drawable/ic_repeat_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonRepeat"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:background="#029183">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Lời bài hát"/>
+
+    </LinearLayout>
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<include layout="@layout/content_drive" />-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+</LinearLayout>
